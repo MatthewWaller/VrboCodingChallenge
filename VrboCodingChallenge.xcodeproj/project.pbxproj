@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA247BA92541E68700380934 /* VrboCodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BA82541E68700380934 /* VrboCodingChallengeApp.swift */; };
+		DA247BAB2541E68700380934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BAA2541E68700380934 /* ContentView.swift */; };
+		DA247BAD2541E68800380934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA247BAC2541E68800380934 /* Assets.xcassets */; };
+		DA247BB02541E68800380934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA247BAF2541E68800380934 /* Preview Assets.xcassets */; };
+		DA247BBB2541E68900380934 /* VrboCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BBA2541E68900380934 /* VrboCodingChallengeTests.swift */; };
+		DA247BC62541E68900380934 /* VrboCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BC52541E68900380934 /* VrboCodingChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA247BB72541E68900380934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA247B9D2541E68700380934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA247BA42541E68700380934;
+			remoteInfo = VrboCodingChallenge;
+		};
+		DA247BC22541E68900380934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA247B9D2541E68700380934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA247BA42541E68700380934;
+			remoteInfo = VrboCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA247BA52541E68700380934 /* VrboCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VrboCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA247BA82541E68700380934 /* VrboCodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrboCodingChallengeApp.swift; sourceTree = "<group>"; };
+		DA247BAA2541E68700380934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA247BAC2541E68800380934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA247BAF2541E68800380934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA247BB12541E68800380934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA247BB62541E68900380934 /* VrboCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VrboCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA247BBA2541E68900380934 /* VrboCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrboCodingChallengeTests.swift; sourceTree = "<group>"; };
+		DA247BBC2541E68900380934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA247BC12541E68900380934 /* VrboCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VrboCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA247BC52541E68900380934 /* VrboCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrboCodingChallengeUITests.swift; sourceTree = "<group>"; };
+		DA247BC72541E68900380934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA247BA22541E68700380934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA247BB32541E68900380934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA247BBE2541E68900380934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA247B9C2541E68700380934 = {
+			isa = PBXGroup;
+			children = (
+				DA247BA72541E68700380934 /* VrboCodingChallenge */,
+				DA247BB92541E68900380934 /* VrboCodingChallengeTests */,
+				DA247BC42541E68900380934 /* VrboCodingChallengeUITests */,
+				DA247BA62541E68700380934 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA247BA62541E68700380934 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA247BA52541E68700380934 /* VrboCodingChallenge.app */,
+				DA247BB62541E68900380934 /* VrboCodingChallengeTests.xctest */,
+				DA247BC12541E68900380934 /* VrboCodingChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA247BA72541E68700380934 /* VrboCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				DA247BA82541E68700380934 /* VrboCodingChallengeApp.swift */,
+				DA247BAA2541E68700380934 /* ContentView.swift */,
+				DA247BAC2541E68800380934 /* Assets.xcassets */,
+				DA247BB12541E68800380934 /* Info.plist */,
+				DA247BAE2541E68800380934 /* Preview Content */,
+			);
+			path = VrboCodingChallenge;
+			sourceTree = "<group>";
+		};
+		DA247BAE2541E68800380934 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA247BAF2541E68800380934 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA247BB92541E68900380934 /* VrboCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA247BBA2541E68900380934 /* VrboCodingChallengeTests.swift */,
+				DA247BBC2541E68900380934 /* Info.plist */,
+			);
+			path = VrboCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		DA247BC42541E68900380934 /* VrboCodingChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA247BC52541E68900380934 /* VrboCodingChallengeUITests.swift */,
+				DA247BC72541E68900380934 /* Info.plist */,
+			);
+			path = VrboCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA247BA42541E68700380934 /* VrboCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA247BCA2541E68900380934 /* Build configuration list for PBXNativeTarget "VrboCodingChallenge" */;
+			buildPhases = (
+				DA247BA12541E68700380934 /* Sources */,
+				DA247BA22541E68700380934 /* Frameworks */,
+				DA247BA32541E68700380934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VrboCodingChallenge;
+			productName = VrboCodingChallenge;
+			productReference = DA247BA52541E68700380934 /* VrboCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA247BB52541E68900380934 /* VrboCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA247BCD2541E68900380934 /* Build configuration list for PBXNativeTarget "VrboCodingChallengeTests" */;
+			buildPhases = (
+				DA247BB22541E68900380934 /* Sources */,
+				DA247BB32541E68900380934 /* Frameworks */,
+				DA247BB42541E68900380934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA247BB82541E68900380934 /* PBXTargetDependency */,
+			);
+			name = VrboCodingChallengeTests;
+			productName = VrboCodingChallengeTests;
+			productReference = DA247BB62541E68900380934 /* VrboCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA247BC02541E68900380934 /* VrboCodingChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA247BD02541E68900380934 /* Build configuration list for PBXNativeTarget "VrboCodingChallengeUITests" */;
+			buildPhases = (
+				DA247BBD2541E68900380934 /* Sources */,
+				DA247BBE2541E68900380934 /* Frameworks */,
+				DA247BBF2541E68900380934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA247BC32541E68900380934 /* PBXTargetDependency */,
+			);
+			name = VrboCodingChallengeUITests;
+			productName = VrboCodingChallengeUITests;
+			productReference = DA247BC12541E68900380934 /* VrboCodingChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA247B9D2541E68700380934 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					DA247BA42541E68700380934 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					DA247BB52541E68900380934 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = DA247BA42541E68700380934;
+					};
+					DA247BC02541E68900380934 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = DA247BA42541E68700380934;
+					};
+				};
+			};
+			buildConfigurationList = DA247BA02541E68700380934 /* Build configuration list for PBXProject "VrboCodingChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA247B9C2541E68700380934;
+			productRefGroup = DA247BA62541E68700380934 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA247BA42541E68700380934 /* VrboCodingChallenge */,
+				DA247BB52541E68900380934 /* VrboCodingChallengeTests */,
+				DA247BC02541E68900380934 /* VrboCodingChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA247BA32541E68700380934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA247BB02541E68800380934 /* Preview Assets.xcassets in Resources */,
+				DA247BAD2541E68800380934 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA247BB42541E68900380934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA247BBF2541E68900380934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA247BA12541E68700380934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA247BAB2541E68700380934 /* ContentView.swift in Sources */,
+				DA247BA92541E68700380934 /* VrboCodingChallengeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA247BB22541E68900380934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA247BBB2541E68900380934 /* VrboCodingChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA247BBD2541E68900380934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA247BC62541E68900380934 /* VrboCodingChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA247BB82541E68900380934 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA247BA42541E68700380934 /* VrboCodingChallenge */;
+			targetProxy = DA247BB72541E68900380934 /* PBXContainerItemProxy */;
+		};
+		DA247BC32541E68900380934 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA247BA42541E68700380934 /* VrboCodingChallenge */;
+			targetProxy = DA247BC22541E68900380934 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DA247BC82541E68900380934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA247BC92541E68900380934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA247BCB2541E68900380934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VrboCodingChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = J4QNM34RPP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VrboCodingChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Blueshift.VrboCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA247BCC2541E68900380934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VrboCodingChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = J4QNM34RPP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VrboCodingChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Blueshift.VrboCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA247BCE2541E68900380934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4QNM34RPP;
+				INFOPLIST_FILE = VrboCodingChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Blueshift.VrboCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VrboCodingChallenge.app/VrboCodingChallenge";
+			};
+			name = Debug;
+		};
+		DA247BCF2541E68900380934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4QNM34RPP;
+				INFOPLIST_FILE = VrboCodingChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Blueshift.VrboCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VrboCodingChallenge.app/VrboCodingChallenge";
+			};
+			name = Release;
+		};
+		DA247BD12541E68900380934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4QNM34RPP;
+				INFOPLIST_FILE = VrboCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Blueshift.VrboCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VrboCodingChallenge;
+			};
+			name = Debug;
+		};
+		DA247BD22541E68900380934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4QNM34RPP;
+				INFOPLIST_FILE = VrboCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Blueshift.VrboCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VrboCodingChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA247BA02541E68700380934 /* Build configuration list for PBXProject "VrboCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA247BC82541E68900380934 /* Debug */,
+				DA247BC92541E68900380934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA247BCA2541E68900380934 /* Build configuration list for PBXNativeTarget "VrboCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA247BCB2541E68900380934 /* Debug */,
+				DA247BCC2541E68900380934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA247BCD2541E68900380934 /* Build configuration list for PBXNativeTarget "VrboCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA247BCE2541E68900380934 /* Debug */,
+				DA247BCF2541E68900380934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA247BD02541E68900380934 /* Build configuration list for PBXNativeTarget "VrboCodingChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA247BD12541E68900380934 /* Debug */,
+				DA247BD22541E68900380934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA247B9D2541E68700380934 /* Project object */;
+}
