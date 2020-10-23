@@ -15,6 +15,18 @@ struct ContentView: View {
         setNavigationColors()
     }
     
+    private func searchEvents(text: String) {
+        if text.isEmpty {
+            return
+        }
+        
+        service.search(event: text)
+    }
+    
+    private func searchCancelled() {
+        service.getAllEvents()
+    }
+    
     private func setNavigationColors() {
         let backgroundColor = UIColor(red: 17/255,
                                       green: 49/255,
@@ -49,9 +61,8 @@ struct ContentView: View {
                 }
             }
             .listStyle(PlainListStyle())
-            .navigationBarSearch($searchText)
+            .navigationBarSearch($searchText, didSearch: searchEvents, didCancel: searchCancelled)
             .navigationTitle(Text("Events"))
-            
         }
     }
 }

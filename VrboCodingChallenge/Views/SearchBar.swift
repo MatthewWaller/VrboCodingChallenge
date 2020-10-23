@@ -23,17 +23,23 @@ import SwiftUI
 import Combine
 
 public extension View {
-    func navigationBarSearch(_ searchText: Binding<String>) -> some View {
-        return overlay(SearchBar(text: searchText).frame(width: 0, height: 0))
+    func navigationBarSearch(_ searchText: Binding<String>,
+                             didSearch: @escaping (String) -> Void,
+                             didCancel: @escaping () -> Void) -> some View {
+        return overlay(SearchBar(text: searchText, didSearch: didSearch, didCancel: didCancel).frame(width: 0, height: 0))
     }
 }
 
 fileprivate struct SearchBar: UIViewControllerRepresentable {
     @Binding
     var text: String
+    var didSearch: (String) -> Void
+    var didCancel: () -> Void
 
-    init(text: Binding<String>) {
+    init(text: Binding<String>, didSearch: @escaping (String) -> Void, didCancel: @escaping () -> Void) {
         self._text = text
+        self.didSearch = didSearch
+        self.didCancel = didCancel
     }
 
     func makeUIViewController(context: Context) -> SearchBarWrapperController {
@@ -45,20 +51,23 @@ fileprivate struct SearchBar: UIViewControllerRepresentable {
     }
 
     func makeCoordinator() -> Coordinator {
-        return Coordinator(text: $text)
+        return Coordinator(text: $text, didSearch: didSearch, didCancel: didCancel)
     }
 
-    class Coordinator: NSObject, UISearchResultsUpdating {
+    class Coordinator: NSObject, UISearchResultsUpdating, UISearchControllerDelegate {
         @Binding
         var text: String
         let searchController: UISearchController
+        var didSearch: (String) -> Void
+        var didCancel: () -> Void
 
         private var subscription: AnyCancellable?
 
-        init(text: Binding<String>) {
+        init(text: Binding<String>, didSearch: @escaping (String) -> Void, didCancel: @escaping () -> Void) {
             self._text = text
             self.searchController = UISearchController(searchResultsController: nil)
-
+            self.didSearch = didSearch
+            self.didCancel = didCancel
             super.init()
 
             searchController.searchResultsUpdater = self
@@ -68,6 +77,7 @@ fileprivate struct SearchBar: UIViewControllerRepresentable {
             searchController.automaticallyShowsScopeBar = true
             searchController.searchBar.barStyle = .black
             searchController.definesPresentationContext = true
+            searchController.delegate = self
 
             setMagnifyingGlassColor(forSearchBar: searchController.searchBar,
                          color: .lightGray)
@@ -86,7 +96,13 @@ fileprivate struct SearchBar: UIViewControllerRepresentable {
             guard let text = searchController.searchBar.text else { return }
             DispatchQueue.main.async { [weak self] in
                 self?.text = text
+                self?.didSearch(text)
             }
+        }
+        
+        // Delegate
+        func didDismissSearchController(_ searchController: UISearchController) {
+            didCancel()
         }
         
         private func setMagnifyingGlassColor(forSearchBar bar: UISearchBar, color: UIColor?) {

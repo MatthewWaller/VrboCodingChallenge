@@ -18,6 +18,7 @@
 		DA247BEB2542612B00380934 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA247BEA2542612B00380934 /* KingfisherSwiftUI */; };
 		DA247BF02542616900380934 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BEF2542616900380934 /* EventRow.swift */; };
 		DA247BF525426A9100380934 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BF425426A9100380934 /* EventDetail.swift */; };
+		DA247C1625435A2D00380934 /* SeatGeekModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247C1525435A2D00380934 /* SeatGeekModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		DA247BDB2541F93800380934 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		DA247BEF2542616900380934 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 		DA247BF425426A9100380934 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		DA247C1525435A2D00380934 /* SeatGeekModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				DA247BA82541E68700380934 /* VrboCodingChallengeApp.swift */,
-				DA247BDB2541F93800380934 /* SearchBar.swift */,
-				DA247BAA2541E68700380934 /* ContentView.swift */,
-				DA247BEF2542616900380934 /* EventRow.swift */,
-				DA247BF425426A9100380934 /* EventDetail.swift */,
+				DA247C1E25435A9F00380934 /* Models */,
+				DA247C1A25435A9700380934 /* Views */,
 				DA247BAC2541E68800380934 /* Assets.xcassets */,
 				DA247BB12541E68800380934 /* Info.plist */,
 				DA247BAE2541E68800380934 /* Preview Content */,
-				DA247BD62541E6AF00380934 /* SeatGeekService.swift */,
 			);
 			path = VrboCodingChallenge;
 			sourceTree = "<group>";
@@ -142,6 +141,26 @@
 				DA247BC72541E68900380934 /* Info.plist */,
 			);
 			path = VrboCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		DA247C1A25435A9700380934 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA247BAA2541E68700380934 /* ContentView.swift */,
+				DA247BEF2542616900380934 /* EventRow.swift */,
+				DA247BF425426A9100380934 /* EventDetail.swift */,
+				DA247BDB2541F93800380934 /* SearchBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA247C1E25435A9F00380934 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA247BD62541E6AF00380934 /* SeatGeekService.swift */,
+				DA247C1525435A2D00380934 /* SeatGeekModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +303,7 @@
 				DA247BF02542616900380934 /* EventRow.swift in Sources */,
 				DA247BD72541E6AF00380934 /* SeatGeekService.swift in Sources */,
 				DA247BA92541E68700380934 /* VrboCodingChallengeApp.swift in Sources */,
+				DA247C1625435A2D00380934 /* SeatGeekModels.swift in Sources */,
 				DA247BF525426A9100380934 /* EventDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
