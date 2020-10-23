@@ -22,7 +22,10 @@ struct EventRow: SwiftUI.View {
     }
     
     var event: SeatGeekEvent
-    private let options: KingfisherOptionsInfo = [.processor(ResizingImageProcessor(referenceSize: .init(width: 60, height: 60), mode: .aspectFill))]
+    private let options: KingfisherOptionsInfo = [
+        .processor(ResizingImageProcessor(referenceSize: .init(width: 60, height: 60),
+                                          mode: .aspectFill))
+    ]
     
     var body: some SwiftUI.View {
         ZStack(alignment: .leading) {

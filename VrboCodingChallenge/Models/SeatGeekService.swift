@@ -16,11 +16,11 @@ extension Logger {
 }
 
 class SeatGeekService: ObservableObject {
-    enum Endpoint: String {
+    private enum Endpoint: String {
         case seatGeek = "api.seatgeek.com"
     }
     
-    enum APIError: Error, LocalizedError {
+    private enum APIError: Error, LocalizedError {
         case sessionFailed(error: URLError)
         case decodingFailed
         case other(Error)

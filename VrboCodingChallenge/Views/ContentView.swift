@@ -28,20 +28,15 @@ struct ContentView: View {
     }
     
     private func setNavigationColors() {
-        let backgroundColor = UIColor(red: 17/255,
-                                      green: 49/255,
-                                      blue: 70/255,
-                                      alpha: 1)
-        let titleColor: UIColor = .white
-        let coloredAppearance = UINavigationBarAppearance()
-        coloredAppearance.configureWithTransparentBackground()
-        coloredAppearance.backgroundColor = backgroundColor
-        coloredAppearance.titleTextAttributes = [.foregroundColor: titleColor]
-        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: titleColor]
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.backgroundColor = Theme.navigationBackground
+        appearance.titleTextAttributes = [.foregroundColor: Theme.navigationTint]
+        appearance.largeTitleTextAttributes = [.foregroundColor: Theme.navigationTint]
 
-        UINavigationBar.appearance().standardAppearance = coloredAppearance
-        UINavigationBar.appearance().compactAppearance = coloredAppearance
-        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
     
     var body: some View {
