@@ -8,9 +8,51 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var service: SeatGeekService
+    @State private var searchText: String = ""
+    
+    init() {
+        setNavigationColors()
+    }
+    
+    private func setNavigationColors() {
+        let backgroundColor = UIColor(red: 17/255,
+                                      green: 49/255,
+                                      blue: 70/255,
+                                      alpha: 1)
+        let titleColor: UIColor = .white
+        let coloredAppearance = UINavigationBarAppearance()
+        coloredAppearance.configureWithTransparentBackground()
+        coloredAppearance.backgroundColor = backgroundColor
+        coloredAppearance.titleTextAttributes = [.foregroundColor: titleColor]
+        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: titleColor]
+
+        UINavigationBar.appearance().standardAppearance = coloredAppearance
+        UINavigationBar.appearance().compactAppearance = coloredAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                if service.events.isEmpty {
+                    ProgressView()
+                } else {
+                    List(service.events) { event in
+                        NavigationLink(
+                            destination: EventDetail(event: event),
+                            label: {
+                                EventRow(event: event)
+                            }
+                        )
+                    }
+                }
+            }
+            .listStyle(PlainListStyle())
+            .navigationBarSearch($searchText)
+            .navigationTitle(Text("Events"))
+            
+        }
     }
 }
 

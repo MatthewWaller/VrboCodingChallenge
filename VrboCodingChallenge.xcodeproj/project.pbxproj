@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		DA247BB02541E68800380934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA247BAF2541E68800380934 /* Preview Assets.xcassets */; };
 		DA247BBB2541E68900380934 /* VrboCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BBA2541E68900380934 /* VrboCodingChallengeTests.swift */; };
 		DA247BC62541E68900380934 /* VrboCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BC52541E68900380934 /* VrboCodingChallengeUITests.swift */; };
+		DA247BD72541E6AF00380934 /* SeatGeekService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BD62541E6AF00380934 /* SeatGeekService.swift */; };
+		DA247BDC2541F93800380934 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BDB2541F93800380934 /* SearchBar.swift */; };
+		DA247BEB2542612B00380934 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA247BEA2542612B00380934 /* KingfisherSwiftUI */; };
+		DA247BF02542616900380934 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BEF2542616900380934 /* EventRow.swift */; };
+		DA247BF525426A9100380934 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA247BF425426A9100380934 /* EventDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,10 @@
 		DA247BC12541E68900380934 /* VrboCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VrboCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA247BC52541E68900380934 /* VrboCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrboCodingChallengeUITests.swift; sourceTree = "<group>"; };
 		DA247BC72541E68900380934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA247BD62541E6AF00380934 /* SeatGeekService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekService.swift; sourceTree = "<group>"; };
+		DA247BDB2541F93800380934 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		DA247BEF2542616900380934 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		DA247BF425426A9100380934 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA247BEB2542612B00380934 /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,10 +106,14 @@
 			isa = PBXGroup;
 			children = (
 				DA247BA82541E68700380934 /* VrboCodingChallengeApp.swift */,
+				DA247BDB2541F93800380934 /* SearchBar.swift */,
 				DA247BAA2541E68700380934 /* ContentView.swift */,
+				DA247BEF2542616900380934 /* EventRow.swift */,
+				DA247BF425426A9100380934 /* EventDetail.swift */,
 				DA247BAC2541E68800380934 /* Assets.xcassets */,
 				DA247BB12541E68800380934 /* Info.plist */,
 				DA247BAE2541E68800380934 /* Preview Content */,
+				DA247BD62541E6AF00380934 /* SeatGeekService.swift */,
 			);
 			path = VrboCodingChallenge;
 			sourceTree = "<group>";
@@ -146,6 +160,9 @@
 			dependencies = (
 			);
 			name = VrboCodingChallenge;
+			packageProductDependencies = (
+				DA247BEA2542612B00380934 /* KingfisherSwiftUI */,
+			);
 			productName = VrboCodingChallenge;
 			productReference = DA247BA52541E68700380934 /* VrboCodingChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +234,9 @@
 				Base,
 			);
 			mainGroup = DA247B9C2541E68700380934;
+			packageReferences = (
+				DA247BE92542612B00380934 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = DA247BA62541E68700380934 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,7 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA247BAB2541E68700380934 /* ContentView.swift in Sources */,
+				DA247BDC2541F93800380934 /* SearchBar.swift in Sources */,
+				DA247BF02542616900380934 /* EventRow.swift in Sources */,
+				DA247BD72541E6AF00380934 /* SeatGeekService.swift in Sources */,
 				DA247BA92541E68700380934 /* VrboCodingChallengeApp.swift in Sources */,
+				DA247BF525426A9100380934 /* EventDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA247BE92542612B00380934 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA247BEA2542612B00380934 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA247BE92542612B00380934 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA247B9D2541E68700380934 /* Project object */;
 }

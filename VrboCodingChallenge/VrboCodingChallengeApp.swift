@@ -12,6 +12,7 @@ struct VrboCodingChallengeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(SeatGeekService())
         }
     }
 }
